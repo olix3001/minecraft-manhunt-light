@@ -1,0 +1,9 @@
+name: Manhunt
+version: ${project.version}
+main: pl.olix3001.manhunt.Manhunt
+api-version: 1.13
+authors: [olix3001]
+commands:
+  hunt:
+    usage: /<command> <player>
+    description: sets player as a runner
