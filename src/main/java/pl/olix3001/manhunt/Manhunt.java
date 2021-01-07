@@ -201,7 +201,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
             e.getPlayer().sendMessage(ChatColor.GOLD + "Wpisz /hunt <nazwa gracza> żeby rozpocząć nową grę");
             TextComponent discordLink = new TextComponent(ChatColor.DARK_RED + "DISCORD");
             discordLink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.com/invite/rmHZWbqCxE"));
-            TextComponent prefix = new TextComponent(ChatColor.DARK_PURPLE + "Jeżeli chcesz plugin na swój serwer sprawdź #pluginy na moim [");
+            TextComponent prefix = new TextComponent(ChatColor.DARK_PURPLE + "Jeżeli chcesz plugin na swój serwer sprawdź \n#pluginy na [");
             TextComponent suffix = new TextComponent(ChatColor.DARK_PURPLE + "] <- KLIKNIJ");
             prefix.addExtra(discordLink);
             prefix.addExtra(suffix);
