@@ -49,14 +49,6 @@ public final class Manhunt extends JavaPlugin implements Listener {
                         ItemStack offHand = p.getInventory().getItemInOffHand();
                         if ((mainHand.getType() == Material.COMPASS && mainHand.getItemMeta().isUnbreakable()) || (offHand.getType() == Material.COMPASS && offHand.getItemMeta().isUnbreakable())) {
                             p.setCompassTarget(runner.getLocation());
-                            for (ItemStack item : p.getInventory().getContents()) {
-                                if (item == null) continue;
-                                if (item.getType() == Material.COMPASS && item.getItemMeta().isUnbreakable()) {
-                                    ItemMeta meta = item.getItemMeta();
-                                    meta.setDisplayName(ChatColor.GOLD + "Lokalizator");
-                                    item.setItemMeta(meta);
-                                }
-                            }
                         }
                     }
                 }
