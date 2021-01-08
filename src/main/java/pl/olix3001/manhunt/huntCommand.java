@@ -85,10 +85,10 @@ public class huntCommand implements CommandExecutor {
                 Bukkit.broadcastMessage(ChatColor.GREEN + "START");
                 HandlerList.unregisterAll(plugin.event);
             }
-        }, 20*10);
+        }, 20*15);
 
         Bukkit.broadcastMessage(Manhunt.getInstance().prefix + ChatColor.GOLD + "=====< Manhunt by olix3001 >=====");
-        Bukkit.broadcastMessage(Manhunt.getInstance().prefix + ChatColor.GOLD + args[0] + " jest teraz goniony (10 sekund na ucieczkę)");
+        Bukkit.broadcastMessage(Manhunt.getInstance().prefix + ChatColor.GOLD + args[0] + " jest teraz goniony (15 sekund na ucieczkę)");
         return true;
     }
 }

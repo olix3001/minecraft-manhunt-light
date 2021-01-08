@@ -53,7 +53,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
                                 if (item == null) continue;
                                 if (item.getType() == Material.COMPASS && item.getItemMeta().isUnbreakable()) {
                                     ItemMeta meta = item.getItemMeta();
-                                    meta.setDisplayName(ChatColor.GOLD + "Lokalizator <" + ((int)(Math.ceil(p.getLocation().distance(runner.getLocation())/100.0)*100)) + ">");
+                                    meta.setDisplayName(ChatColor.GOLD + "Lokalizator");
                                     item.setItemMeta(meta);
                                 }
                             }
