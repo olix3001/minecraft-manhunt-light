@@ -36,6 +36,7 @@ public class huntCommand implements CommandExecutor {
         runner.setGameMode(GameMode.SURVIVAL);
         runner.getWorld().setTime(3000);
         Manhunt.getInstance().runner = runner;
+        Manhunt.getInstance().start = runner.getLocation().clone();
         Manhunt plugin = Manhunt.getInstance();
         for (Player p : Bukkit.getOnlinePlayers()) {
             plugin.RemoveAdvancements(p);

@@ -27,6 +27,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
 
     private static Manhunt instance;
     public Player runner;
+    public Location start;
     public String prefix;
     public beforeEvent event;
     public WorldRegen regen;
@@ -103,7 +104,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
                 @Override
                 public void run() {
                     for (Player p : Bukkit.getOnlinePlayers()) {
-                        p.teleport(p.getBedSpawnLocation());
+                        p.teleport(start);
                     }
                     regenerateMap();
                 }
@@ -131,7 +132,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
             @Override
             public void run() {
                 for (Player p : Bukkit.getOnlinePlayers()) {
-                    p.teleport(p.getBedSpawnLocation());
+                    p.teleport(start);
                 }
                 regenerateMap();
             }
@@ -164,7 +165,7 @@ public final class Manhunt extends JavaPlugin implements Listener {
             public void run() {
                 for (Player p : Bukkit.getOnlinePlayers()) {
                     if (p.getBedSpawnLocation() == null) continue;
-                    p.teleport(p.getBedSpawnLocation());
+                    p.teleport(start);
                 }
                 regenerateMap();
             }
